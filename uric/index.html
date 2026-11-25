@@ -43,7 +43,8 @@ p code,li code,td code,dd code{white-space:nowrap;font-size:.88em;background:#E3
 .skip:focus{left:8px}
 
 /* header */
-.top{border-bottom:1px solid var(--rule);background:var(--paper)}
+.top{position:sticky;top:0;z-index:5;border-bottom:1px solid var(--rule);background:rgba(243,246,249,.94);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+[id]{scroll-margin-top:64px}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:24px}
 .brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:600;font-size:19px;letter-spacing:-.01em}
 .brand svg{width:28px;height:28px;flex:none}
